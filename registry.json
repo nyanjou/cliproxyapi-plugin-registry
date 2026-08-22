@@ -1,14 +1,27 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "plugins": [
     {
       "id": "cliproxyapi-cursor",
       "name": "Cursor Agent CLI provider",
       "description": "Policy-safe experimental Cursor provider that invokes only the official Cursor Agent CLI in read-only ask mode with sandboxing and a fresh private workspace per request.",
       "author": "Nyanjou",
+      "version": "0.2.0",
       "repository": "https://github.com/nyanjou/cliproxyapi-cursor-plugin",
       "homepage": "https://github.com/nyanjou/cliproxyapi-cursor-plugin#readme",
       "license": "MIT",
+      "install": {
+        "type": "direct",
+        "artifacts": [
+          {
+            "goos": "linux",
+            "goarch": "amd64",
+            "url": "https://github.com/nyanjou/cliproxyapi-cursor-plugin/releases/download/v0.2.0/cliproxyapi-cursor_0.2.0_linux_amd64.zip",
+            "sha256": "b0147e981af128fa707f2e9c010ce7afea0b338e58d1b4a3c595cc68c9647757",
+            "size": 10874324
+          }
+        ]
+      },
       "tags": [
         "Provider",
         "Cursor",

@@ -21,11 +21,16 @@ plugins:
 
 The official source remains enabled automatically.
 
-## Current entries
+## Current entry
 
-No plugins are currently published. The provisional Cursor entry from official-store PR #95 was removed after source review found that v0.4.0 renders account email, subscription, billing, spend-limit, and usage data from an unauthenticated CLIProxyAPI resource route. It must not be restored unless that privacy issue is fixed and the replacement release passes a complete review.
+- `cursor` points to the standalone Cursor plugin in `yobo2u/omsub`, proposed to the official store in PR #96.
+- Release `v0.5.8` was reviewed at source tag `b9e3542` with the shipped binary built from source commit `c289664` (the tag's source delta after that commit is release-asset synchronization only).
+- Local verification passed unit tests, race tests, vet, Go vulnerability scanning with the release's Go 1.25.13 toolchain, checksum/ZIP/ELF/ABI checks, and an isolated load/smoke test against CLIProxyAPI v7.2.138.
+- The unauthenticated browser resource contains only a static management shell. Account/model/usage data and mutations are served through management-authenticated routes; missing management credentials returned HTTP 401 in the isolated host test.
 
-CLIProxyAPI dynamic-library plugins execute inside the host process. A valid checksum and archive layout prove artifact integrity, not behavioral safety; source and release review are mandatory before listing.
+The plugin still speaks Cursor's undocumented backend and is unofficial. It may break when Cursor changes the protocol and could carry account-policy risk. Install only for an account/subscription you own or are explicitly authorized to use, keep auth/config backups, and test before depending on it.
+
+CLIProxyAPI dynamic-library plugins execute inside the host process. A valid checksum and archive layout prove artifact integrity, not behavioral safety; source and release review remain mandatory before listing.
 
 ## Duplicate-ID cleanup
 

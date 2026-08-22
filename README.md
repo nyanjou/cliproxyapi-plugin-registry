@@ -21,13 +21,11 @@ plugins:
 
 The official source remains enabled automatically.
 
-## Current entry
+## Current entries
 
-- `cursor` points to `davidfarah2003/cliproxy-cursor-provider`, currently proposed to the official store in PR #95.
-- The plugin speaks an undocumented Cursor backend and is unofficial. Install only for an account and subscription you own or are explicitly authorized to use.
-- A CLIProxyAPI dynamic-library plugin executes inside the host process. Verify the release checksum and review the source before installation.
+No plugins are currently published. The provisional Cursor entry from official-store PR #95 was removed after source review found that v0.4.0 renders account email, subscription, billing, spend-limit, and usage data from an unauthenticated CLIProxyAPI resource route. It must not be restored unless that privacy issue is fixed and the replacement release passes a complete review.
 
-This registry entry is provisional while the competing Cursor submissions are independently audited. It may be switched before installation if the other implementation proves safer.
+CLIProxyAPI dynamic-library plugins execute inside the host process. A valid checksum and archive layout prove artifact integrity, not behavioral safety; source and release review are mandatory before listing.
 
 ## Duplicate-ID cleanup
 

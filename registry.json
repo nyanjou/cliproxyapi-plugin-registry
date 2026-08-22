@@ -1,22 +1,4 @@
 {
   "schema_version": 1,
-  "plugins": [
-    {
-      "id": "cursor",
-      "name": "Cursor Provider",
-      "description": "Exposes the models on an authorized Cursor subscription to OpenAI-compatible clients.",
-      "author": "davidfarah2003",
-      "repository": "https://github.com/davidfarah2003/cliproxy-cursor-provider",
-      "logo": "https://raw.githubusercontent.com/davidfarah2003/cliproxy-cursor-provider/master/logo.svg",
-      "homepage": "https://github.com/davidfarah2003/cliproxy-cursor-provider",
-      "license": "MIT",
-      "tags": [
-        "Provider",
-        "Cursor",
-        "OAuth",
-        "Usage",
-        "Quota"
-      ]
-    }
-  ]
+  "plugins": []
 }

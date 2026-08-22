@@ -21,16 +21,15 @@ plugins:
 
 The official source remains enabled automatically.
 
-## Current entry
+## Current entries
 
-- `cursor` points to the standalone Cursor plugin in `yobo2u/omsub`, proposed to the official store in PR #96.
-- Release `v0.5.8` was reviewed at source tag `b9e3542` with the shipped binary built from source commit `c289664` (the tag's source delta after that commit is release-asset synchronization only).
-- Local verification passed unit tests, race tests, vet, Go vulnerability scanning with the release's Go 1.25.13 toolchain, checksum/ZIP/ELF/ABI checks, and an isolated load/smoke test against CLIProxyAPI v7.2.138.
-- The unauthenticated browser resource contains only a static management shell. Account/model/usage data and mutations are served through management-authenticated routes; missing management credentials returned HTTP 401 in the isolated host test.
+No plugins are currently published.
 
-The plugin still speaks Cursor's undocumented backend and is unofficial. It may break when Cursor changes the protocol and could carry account-policy risk. Install only for an account/subscription you own or are explicitly authorized to use, keep auth/config backups, and test before depending on it.
+The Cursor plugin from official-store PR #96 passed the local code, release, and runtime security audit, but was withdrawn from this registry because it calls Cursor's private, non-public client endpoints. Cursor staff explicitly identifies that implementation category as contrary to the Terms' use restrictions and says even personal local proxies can trigger abuse enforcement. Code safety does not make it account-policy safe.
 
-CLIProxyAPI dynamic-library plugins execute inside the host process. A valid checksum and archive layout prove artifact integrity, not behavioral safety; source and release review remain mandatory before listing.
+For Cursor automation, use only Cursor's documented CLI, Agent SDK, or public Cloud Agents API. A future Cursor adapter listed here must preserve the official agent harness and must not reverse-engineer or call private endpoints directly.
+
+CLIProxyAPI dynamic-library plugins execute inside the host process. A valid checksum and archive layout prove artifact integrity, not behavioral or account-policy safety; source, release, and upstream-policy review are mandatory before listing.
 
 ## Duplicate-ID cleanup
 

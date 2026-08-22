@@ -1,21 +1,4 @@
 {
   "schema_version": 1,
-  "plugins": [
-    {
-      "id": "cursor",
-      "name": "Cursor for CPA/CLIProxyAPI",
-      "description": "Adds user-authorized Cursor subscriptions with OAuth, dynamic model discovery, streaming Chat Completions, bounded session checkpoints, client tool calls, image/text attachments, local usage estimates, and authenticated model controls.",
-      "author": "yobo2u",
-      "repository": "https://github.com/yobo2u/omsub",
-      "homepage": "https://github.com/yobo2u/omsub/tree/cursor/cursor-plugin",
-      "license": "MIT",
-      "tags": [
-        "Provider",
-        "Cursor",
-        "OAuth",
-        "Management",
-        "Usage"
-      ]
-    }
-  ]
+  "plugins": []
 }

@@ -4,9 +4,9 @@
     {
       "id": "cliproxyapi-cursor",
       "name": "Cursor Agent CLI provider",
-      "description": "Policy-safe experimental Cursor provider that invokes only the official Cursor Agent CLI in read-only ask mode with sandbox disabled, a fresh private workspace per request, and native auth/model metadata for CLIProxyAPI Quota Management.",
+      "description": "Policy-safe experimental Cursor provider that invokes only the official Cursor Agent CLI in read-only ask mode with sandbox disabled, validates JSON results, supports protocol-correct buffered streaming, and exposes safe account and observed-usage data for native Quota Management.",
       "author": "Nyanjou",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "repository": "https://github.com/nyanjou/cliproxyapi-cursor-plugin",
       "logo": "https://raw.githubusercontent.com/nyanjou/cliproxyapi-cursor-plugin/main/logo.svg",
       "homepage": "https://github.com/nyanjou/cliproxyapi-cursor-plugin#readme",
@@ -17,9 +17,9 @@
           {
             "goos": "linux",
             "goarch": "amd64",
-            "url": "https://github.com/nyanjou/cliproxyapi-cursor-plugin/releases/download/v0.3.0/cliproxyapi-cursor_0.3.0_linux_amd64.zip",
-            "sha256": "74a9faccdaf7716938525bd9703675cf8eb7849e1c3c7891d2b1bdaa868583a7",
-            "size": 10888392
+            "url": "https://github.com/nyanjou/cliproxyapi-cursor-plugin/releases/download/v0.4.0/cliproxyapi-cursor_0.4.0_linux_amd64.zip",
+            "sha256": "a84b5d957d6ff8f43d1eee19ebf197b783a40c1a3fd970743f4cc2d7e5da94f4",
+            "size": 10891625
           }
         ]
       },
